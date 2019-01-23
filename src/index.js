@@ -2,7 +2,6 @@ var sharp = require('sharp')
 var crop = require('./crop')
 var fit = require('fit-aspect-ratio')
 
-
 //
 const cropAspect = function(inputImg, ratio) {
   var img = sharp(inputImg);
