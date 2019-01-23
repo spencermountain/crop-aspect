@@ -8,9 +8,18 @@ const prettyPrint = function(res) {
   console.log('')
   console.log('')
   console.log(gap + chalk.yellow('---------------'))
-  console.log(chalk.blue(`${gap}Closest aspect-ratio is: `) + chalk.yellow(res.aspect.names[0]))
+  if (res.closest.names) {
+    console.log(chalk.blue(`${gap}Closest aspect-ratio is: `) + chalk.yellow(res.closest.names[0]))
+  }
   console.log('')
-  console.log(chalk.blue(`${gap}   this crops image by `) + chalk.red(Math.abs(res.percent_change) + '%'))
+  if (res.width < res.original.width) {
+    let diff = res.original.width - res.width
+    console.log(chalk.blue(`${gap}   this crops width by `) + chalk.red(diff + 'px'))
+  }
+  if (res.height < res.original.height) {
+    let diff = res.original.height - res.height
+    console.log(chalk.blue(`${gap}   this crops height by `) + chalk.red(diff + 'px'))
+  }
   console.log('')
   console.log(gap + '      from:  ' + chalk.yellow(res.original.width + ' x ' + res.original.height))
   console.log(gap + '        to:  ' + chalk.green(res.width + ' x ' + res.height))
@@ -20,10 +29,9 @@ const prettyPrint = function(res) {
 //
 const crop = function(obj, img) {
   prettyPrint(obj)
-
-  // resize
-  // let outFile = img.input.file.replace(/(\..*)/, '-out$1')
-  // console.log(outFile)
-  return img.resize(obj.width, obj.height, options).toFile('./tmp.jpg')
+  let file = img.options.input.file || ''
+  let suff = obj.width + 'x' + obj.height
+  let outFile = file.replace(/(\..*)/, '-' + suff + '$1')
+  return img.resize(obj.width, obj.height, options).toFile(outFile)
 }
 module.exports = crop

@@ -1,10 +1,13 @@
 {
-  "name": "aspect-crop",
+  "name": "crop-aspect",
   "version": "0.0.1",
   "description": "crop an image by it's closest formal aspect-ratio",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "crop-aspect": "./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,8 @@
   },
   "homepage": "https://github.com/spencermountain/aspect-crop#readme",
   "dependencies": {
-    "chalk": "^2.4.2",
-    "fit-aspect-ratio": "^1.0.2",
-    "sharp": "^0.21.3"
+    "chalk": "2.4.2",
+    "fit-aspect-ratio": "2.0.0",
+    "sharp": "0.21.3"
   }
 }
