@@ -1,7 +1,7 @@
 {
   "name": "crop-aspect",
-  "version": "0.0.1",
-  "description": "crop an image by it's closest formal aspect-ratio",
+  "version": "0.0.2",
+  "description": "crop an image by it's closest aspect-ratio",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

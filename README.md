@@ -14,7 +14,7 @@
 </div>
 
 <div align="center">
-  <code>npm i crop-aspect</code>
+  <code>npm i -g crop-aspect</code>
 </div>
 
 <p></p>
