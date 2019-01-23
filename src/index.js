@@ -1,18 +1,18 @@
-const sharp = require('sharp')
-const crop = require('./crop')
-const fit = require('fit-aspect-ratio')
+var sharp = require('sharp')
+var crop = require('./crop')
+var fit = require('fit-aspect-ratio')
 
-let inputImg = process.argv[2]
-let ratio = process.argv[3] || null
+var inputImg = process.argv[2]
+var ratio = process.argv[3] || null
 
-const img = sharp(inputImg);
+var img = sharp(inputImg);
 img.metadata().then(function(data) {
-  let obj = {
+  var obj = {
     width: data.width,
     height: data.height,
     ratio: ratio
   }
-  let res = fit(obj)
+  var res = fit(obj)
   res.original = data
   return res
 }).then((obj) => {
