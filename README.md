@@ -1,3 +1,19 @@
+<div align="center">
+	<h3>crop-aspect</h3>
+	<a href="https://npmjs.org/package/crop-aspect">
+		<img src="https://img.shields.io/npm/v/crop-aspect.svg?style=flat-square" />
+	</a>
+	<div>crop an image by a nearby aspect-ratio</div>
+  <sub>
+    by
+    <a href="http://spencermounta.in/">Spencer Kelly</a>
+  </sub>
+</div>
+<p></p>
+
+<div align="center">
+  <code>npm i crop-aspect</code>
+</div>
 
 here's an image of an Apollo guidance computer:
 
@@ -25,7 +41,6 @@ crop-aspect ./myImg.jpg 16:9
 crop-aspect ./myImg.jpg golden
 ```
 
-`npm i crop-aspect`
 
 [sharp](https://sharp.pixelplumbing.com) is doing all the heavy-lifting. This library is simply placing some opinionated aspect-ratios on top of it.
 
