@@ -1,6 +1,6 @@
 {
   "name": "crop-aspect",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "crop an image by it's closest aspect-ratio",
   "main": "./src/index.js",
   "scripts": {
