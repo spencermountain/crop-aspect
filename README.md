@@ -1,5 +1,8 @@
 <div align="center">
 	<h3>crop-aspect</h3>
+  <div>
+    <img src="https://cloud.githubusercontent.com/assets/399657/23590290/ede73772-01aa-11e7-8915-181ef21027bc.png" />
+  </div>
 	<a href="https://npmjs.org/package/crop-aspect">
 		<img src="https://img.shields.io/npm/v/crop-aspect.svg?style=flat-square" />
 	</a>
@@ -9,11 +12,12 @@
     <a href="http://spencermounta.in/">Spencer Kelly</a>
   </sub>
 </div>
-<p></p>
 
 <div align="center">
   <code>npm i crop-aspect</code>
 </div>
+
+<p></p>
 
 here's an image of an Apollo guidance computer:
 
