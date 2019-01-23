@@ -1,13 +1,14 @@
 {
   "name": "crop-aspect",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "crop an image by it's closest aspect-ratio",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch":"amble ./scratch.js"
   },
   "bin": {
-    "crop-aspect": "./src/index.js"
+    "crop-aspect": "./bin/crop-aspect.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
     "chalk": "2.4.2",
     "fit-aspect-ratio": "2.0.0",
     "sharp": "0.21.3"
+  },
+  "devDependencies": {
+    "amble": "0.0.7"
   }
 }

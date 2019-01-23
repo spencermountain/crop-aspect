@@ -45,6 +45,13 @@ crop-aspect ./myImg.jpg 16:9
 crop-aspect ./myImg.jpg golden
 ```
 
+you can also call it from node:
+```js
+var cropAspect=require('crop-aspect')
+cropAspect('./myImg.jpg','square').then(()=>{
+	console.log('done!')
+})
+```
 
 [sharp](https://sharp.pixelplumbing.com) is doing all the heavy-lifting. This library is simply placing some opinionated aspect-ratios on top of it.
 
