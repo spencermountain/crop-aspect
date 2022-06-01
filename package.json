@@ -23,7 +23,7 @@
   "dependencies": {
     "chalk": "2.4.2",
     "fit-aspect-ratio": "2.0.0",
-    "sharp": "0.21.3"
+    "sharp": "0.30.5"
   },
   "devDependencies": {
     "amble": "0.0.7"
